@@ -18,7 +18,7 @@ function RegisterForm() {
         {({ values, handleChange, handleSubmit, isSubmitting }) => (
           <Form onSubmit={handleSubmit}>
             <Label>
-              <TitleInput>What is your name?</TitleInput>
+              <TitleInput>Enter your name</TitleInput>
               <Input
                 type="text"
                 name="name"
@@ -28,7 +28,7 @@ function RegisterForm() {
               <ErrorMessage name="name" component="div" />
             </Label>
             <Label>
-              <TitleInput>Your e-mail adress?</TitleInput>
+              <TitleInput>Enter your e-mail</TitleInput>
               <Input
                 type="email"
                 name="email"
@@ -38,7 +38,7 @@ function RegisterForm() {
               <ErrorMessage name="email" component="div" />
             </Label>
             <Label>
-              <TitleInput>Create a password.</TitleInput>
+              <TitleInput>Create a password</TitleInput>
               <Input
                 type="password"
                 name="password"

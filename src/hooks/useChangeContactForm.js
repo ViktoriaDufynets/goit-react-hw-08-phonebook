@@ -12,7 +12,7 @@ function useChangeContactForm() {
   const { contactId } = useParams();
   const navigate = useNavigate();
 
-  const [chengeContact, { isLoading: isUpdating }] = useChangeContactMutation();
+  const [changeContact, { isLoading: isUpdating }] = useChangeContactMutation();
   const { data: contacts } = useGetContactsQuery();
 
   if (contacts) {
@@ -29,7 +29,7 @@ function useChangeContactForm() {
       Notify.warning('Try to change something first.');
       return;
     }
-    chengeContact({ contactId, ...values });
+    changeContact({ contactId, ...values });
     navigate('/contacts');
     Notify.success('The contact has been successfully changed.');
   };

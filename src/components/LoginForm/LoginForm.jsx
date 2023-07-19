@@ -17,7 +17,7 @@ function LoginForm() {
         {({ values, handleChange, handleSubmit, isSubmitting }) => (
           <Form onSubmit={handleSubmit}>
             <Label>
-              <TitleInput>Your e-mail adress?</TitleInput>
+              <TitleInput>Enter your email</TitleInput>
               <Input
                 type="email"
                 name="email"
@@ -27,7 +27,7 @@ function LoginForm() {
               <ErrorMessage name="email" component="div" />
             </Label>
             <Label>
-              <TitleInput>Your password?</TitleInput>
+              <TitleInput>Enter your password</TitleInput>
               <Input
                 type="password"
                 name="password"

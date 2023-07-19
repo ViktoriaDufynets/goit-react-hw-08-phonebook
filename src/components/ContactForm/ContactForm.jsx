@@ -34,6 +34,8 @@ function ContactForm({
                 name="name"
                 onChange={handleChange}
                 value={values.name}
+                title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
+              required
               />
               <ErrorMessage name="name" component="div" />
             </Label>
@@ -44,6 +46,8 @@ function ContactForm({
                 name="number"
                 onChange={handleChange}
                 value={values.number}
+                title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
+              required
               />
               <ErrorMessage name="number" component="div" />
             </Label>
